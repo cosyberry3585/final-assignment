@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="logo">
+        <div class="nav_bar">
+            <p class="nav_p">menu</p>
+            <p class="nav_p">event</p>
+            <p class="nav_p">store</p>
+            <p class="login_btn">login</p>
+        </div>
+    </header>
+    <section class="event">
+        <div class="img_section">
+            <img id="f_event" src="./assets/event1.png" alt="">
+            <img id="s_event" src="./assets/event2.png" alt="">
+            <img id="t_event" src="./assets/event3.png" alt="">
+        </div>
+        <img id="r_arrow" src="./assets/arrow.png" alt="">
+    </section>
+    <section class="product">
+        <p class="title">product</p>
+        <div class="ice_cream">
+            <div class="pr_div">
+                <img class="pr_name" src="./assets/product.png" alt="">
+                <p class="pr_title">슈팅스타</p>
+                <p class="pr_hashtag">#팝핑캔디 #체리시럽</p>
+            </div>
+            <div class="pr_div">
+                <img class="pr_name" src="./assets/product.png" alt="">
+                <p class="pr_title">슈팅스타</p>
+                <p class="pr_hashtag">#팝핑캔디 #체리시럽</p>
+            </div>
+            <div class="pr_div">
+                <img class="pr_name" src="./assets/product.png" alt="">
+                <p class="pr_title">슈팅스타</p>
+                <p class="pr_hashtag">#팝핑캔디 #체리시럽</p>
+            </div>
+            <div class="pr_div">
+                <img class="pr_name" src="./assets/product.png" alt="">
+                <p class="pr_title">슈팅스타</p>
+                <p class="pr_hashtag">#팝핑캔디 #체리시럽</p>
+            </div>
+            <div class="pr_div">
+                <img class="pr_name" src="./assets/product.png" alt="">
+                <p class="pr_title">슈팅스타</p>
+                <p class="pr_hashtag">#팝핑캔디 #체리시럽</p>
+            </div>
+            <div class="pr_div">
+                <img class="pr_name" src="./assets/product.png" alt="">
+                <p class="pr_title">슈팅스타</p>
+                <p class="pr_hashtag">#팝핑캔디 #체리시럽</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="company">
+        <div class="top">
+            <div class="int_comp">
+                <span>회사소개</span>
+                <img class="comp_img" src="./assets/company.png" alt="">
+            </div>
+            <div class="go_origin">
+                <span>공식사이트</span>
+                <img class="circle_logo" src="./assets/circle_logo.png" alt="">
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="notice">
+                <p>NOTICE</p>
+                <img src="./assets/note.png" alt="">
+            </div>
+            <div class="share">
+                <div class="share_top">
+                    <img src="./assets/faecbook.png" alt="">
+                    <img src="./assets/twitter.png" alt="">
+                    <img src="./assets/blog.png" alt="">
+                </div>
+                <div class="share_bottom">
+                    <img src="./assets/instagram.png" alt="">
+                    <img src="./assets/youtube.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="top_p">업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 도세호 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
+        <p class="mid_p">TEL : 080-555-3131 개인정보관리책임자 : 김경우</p>
+        <p class="bot_p">Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.</p>
+    </footer>
+    <script>
+        let fImg = document.getElementById("f_event");
+        let sImg = document.getElementById("s_event");
+        let tImg = document.getElementById("t_event");
+
+        let rArrow = document.getElementById("r_arrow");
+        let lArrow = document.getElementById("l_arrow");
+
+
+        rArrow.addEventListener("click", () => {
+
+
+            if (fImg.style.transform == 'translateX(-250%)') {
+                fImg.style.transform = 'translateX(-450%)';
+                sImg.style.transform = 'translateX(-250%)';
+                tImg.style.transform = 'translateX(-50%)';
+
+            }
+
+            else if (fImg.style.transform == 'translateX(-450%)') {
+                fImg.style.transform = 'translateX(-50%)';
+                sImg.style.transform = 'translateX(150%)';
+                tImg.style.transform = 'translateX(350%)';
+            }
+
+            else {
+                fImg.style.transform = 'translateX(-250%)';
+                sImg.style.transform = 'translateX(-50%)';
+                tImg.style.transform = 'translateX(150%)';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
